@@ -1,5 +1,5 @@
 import 'electronicdevice_class.dart';
-
+import 'print_with_color.dart';
 class Laptop extends ElectronicDevice{
   int? ramSize;
 
@@ -7,7 +7,7 @@ class Laptop extends ElectronicDevice{
 
    @override
   displayDetails(){
-    print("\nLaptop brand: $brand\nlaptop model: $model\nRam size: $ramSize GB");
+    printWithColor(text: "\nLaptop brand: $brand\nlaptop model: $model\nRam size: $ramSize GB", color: "Cyan");
     print("__________________________________");
    }
 }

@@ -1,4 +1,4 @@
-
+import 'print_with_color.dart';
 class ElectronicDevice{
    String? brand;
    String? model;
@@ -6,7 +6,7 @@ class ElectronicDevice{
    ElectronicDevice(this.brand, this.model);
 
    displayDetails(){
-    print("\nElectronic device's brand: $brand\nElectronic device's model: $model");
+    printWithColor(text: "\nElectronic device's brand: $brand\nElectronic device's model: $model", color: "Cyan");
     print("__________________________________");
    }
 
