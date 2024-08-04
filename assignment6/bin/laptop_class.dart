@@ -7,7 +7,7 @@ class Laptop extends ElectronicDevice{
 
    @override
   displayDetails(){
-    print("Brand of electronic device is $brand and model is $model");
-    print("Ram size is $ramSize");
+    print("\nLaptop brand: $brand\nlaptop model: $model\nRam size: $ramSize GB");
+    print("__________________________________");
    }
 }

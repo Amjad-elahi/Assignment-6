@@ -6,7 +6,7 @@ class Smartphone extends ElectronicDevice {
 
   @override
   displayDetails(){
-    print("Brand of electronic device is $brand and model is $model");
-    print("Batterry life is $batteryLife");
+    print("\nPhone brand: $brand\nPhone model: $model\nBatterry life: $batteryLife hours");
+    print("__________________________________");
    }
 }

@@ -6,7 +6,8 @@ class ElectronicDevice{
    ElectronicDevice(this.brand, this.model);
 
    displayDetails(){
-    print("Brand of electronic device is $brand and model is $model");
+    print("\nElectronic device's brand: $brand\nElectronic device's model: $model");
+    print("__________________________________");
    }
 
    bool compareModel(ElectronicDevice other){
