@@ -1,27 +1,33 @@
 import 'electronicdevice_class.dart';
-class Inventory{
-  List<ElectronicDevice> devices =[];
 
-  void addDevice(ElectronicDevice device){
+// This is inventory class
+class Inventory {
+  // list for storing devices
+  List<ElectronicDevice> devices = [];
+  // add device method
+  void addDevice(ElectronicDevice device) {
     devices.add(device);
   }
 
-  void removeDevice(String model){
+  // remove a device method
+  void removeDevice(String model) {
     for (var i = 0; i < devices.length; i++) {
-      if(model == devices[i].model){
+      if (model == devices[i].model) {
         devices.removeAt(i);
         break;
       }
     }
-    }
+  }
 
-    int counDevices(){
-      return devices.length;
-    }
+  // counting total number of devices method
+  int countDevices() {
+    return devices.length;
+  }
 
-    displayDevicesDetails(){
-      for (var element in devices) {
-        element.displayDetails();
-      }
+  // dispaly devices details
+  displayDevicesDetails() {
+    for (var element in devices) {
+      element.displayDetails();
     }
   }
+}

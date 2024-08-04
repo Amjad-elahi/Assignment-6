@@ -1,16 +1,23 @@
 import 'print_with_color.dart';
-class ElectronicDevice{
-   String? brand;
-   String? model;
 
-   ElectronicDevice(this.brand, this.model);
-
-   displayDetails(){
-    printWithColor(text: "\nElectronic device's brand: $brand\nElectronic device's model: $model", color: "Cyan");
+// this is an electronic device class
+class ElectronicDevice {
+  // attributes
+  String? brand;
+  String? model;
+  // constructor
+  ElectronicDevice(this.brand, this.model);
+  // display method
+  displayDetails() {
+    printWithColor(
+        text:
+            "\nElectronic device's brand: $brand\nElectronic device's model: $model",
+        color: "Cyan");
     print("__________________________________");
-   }
+  }
 
-   bool compareModel(ElectronicDevice other){
+  // compare methode
+  bool compareModel(ElectronicDevice other) {
     return model == other.model;
-   }
+  }
 }
