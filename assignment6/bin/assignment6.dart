@@ -1,8 +1,9 @@
 import 'electronicdevice_class.dart';
+import 'smartphone_class.dart';
 void main(List<String> arguments) {
-  ElectronicDevice device1 = ElectronicDevice(brand: "Apple", model: "iphone 12");
-  ElectronicDevice device2 = ElectronicDevice(brand: "Apple", model: "iphone 12");
-  ElectronicDevice device3 = ElectronicDevice(brand: "Samsung", model: "Galaxy s21");
+  ElectronicDevice device1 = ElectronicDevice("Apple", "iphone 12");
+  ElectronicDevice device2 = ElectronicDevice("Apple", "iphone 12");
+  ElectronicDevice device3 = ElectronicDevice("Samsung", "Galaxy s21");
 
   device1.displayDetails();
   device2.displayDetails();
@@ -11,5 +12,7 @@ void main(List<String> arguments) {
   print(device1.compareModel(device2));
   print(device1.compareModel(device3));
 
+  Smartphone phone1 = Smartphone("Apple", "iphone 12", 15 );
+  phone1.displayDetails();
 
 }
